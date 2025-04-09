@@ -1,17 +1,18 @@
 {
-  "name": "leancloud-simple-git-deploy",
+  "name": "leancloud-gemini-stream-hardcodedkey", // 可以改个名字
   "version": "1.0.0",
-  "description": "A minimal LeanCloud app for Git deployment",
+  "description": "LeanCloud app with Gemini streaming (Hardcoded API Key - UNSAFE!)",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js", 
+    "start": "node server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
-    "express": "^4.17.1"  
+    "@google/generative-ai": "^0.1.0", 
+    "express": "^4.17.1"
   },
   "engines": {
-    "node": ">=20.0.0 <21.0.0"
+     "node": ">=20.0.0 <21.0.0" 
   },
   "author": "",
   "license": "ISC"
