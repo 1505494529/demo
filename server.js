@@ -1,7 +1,6 @@
 'use strict';
 
 const express = require('express');
-const AV = require('leanengine'); // 引入 LeanEngine SDK (即使没直接用 AV 对象，最好也引入)
 
 // 创建 Express 应用实例
 const app = express();
