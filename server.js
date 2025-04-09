@@ -26,7 +26,7 @@ if (!apiKey) {
       genAI = new GoogleGenerativeAI(apiKey);
       // 选择要使用的 Gemini 模型 (例如 'gemini-pro', 'gemini-1.5-flash', 等)
       // 建议查看 Google AI 文档了解最新和最适合你需求的模型
-      geminiModel = genAI.getGenerativeModel({ model: 'gemini-2.5-pro-exp-03-25' });
+      geminiModel = genAI.getGenerativeModel({ model: 'gemini-pro' });
       console.log('Gemini AI Client Initialized (using hardcoded key - UNSAFE!).');
   } catch (initError) {
       console.error("初始化 GoogleGenerativeAI 时失败:", initError);
