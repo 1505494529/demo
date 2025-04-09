@@ -4,15 +4,15 @@
   "description": "A minimal LeanCloud app for Git deployment",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js", // LeanCloud 会用这个命令启动你的应用
+    "start": "node server.js", 
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
-    "express": "^4.17.1",     // 非常流行的 Node.js Web 框架，用于简化 Web 服务器创建
-    "leanengine": "^3.0.0"      // LeanCloud 云引擎 SDK (虽然这个简单例子没直接用，但通常都需要)
+    "express": "^4.17.1",    
+    "leanengine": "^3.0.0"      
   },
   "engines": {
-    "node": ">=14.0.0"         // 指定 LeanCloud 使用的 Node.js 版本 (请根据 LeanCloud 支持情况调整)
+    "node": ">=14.0.0"         
   },
   "author": "",
   "license": "ISC"
