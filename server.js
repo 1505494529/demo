@@ -1,13 +1,7 @@
 import { GoogleGenAI } from "@google/genai";
-
-import { setGlobalDispatcher, ProxyAgent } from "undici";
-const dispatcher = new ProxyAgent({uri: new URL("http://127.0.0.1:7890").toString() });
-setGlobalDispatcher(dispatcher);
-
+import express from 'express';
 const ai = new GoogleGenAI({ apiKey: "AIzaSyDP7o1OSxj_9yrD1IIA4TM_ti-i32f9gqA" });
-
 const app = express();
-
 // --- 定义路由 ---
 
 // 根路由 - 提供基本信息和使用说明
