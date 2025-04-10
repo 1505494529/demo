@@ -18,7 +18,7 @@ app.get('/', (req, res) => {
 app.get('/stream-gemini', async (req, res) => {
   const response = await ai.models.generateContent({
     model: "gemini-2.5-pro-exp-03-25",
-    contents: req.prompt,
+    contents: req.query.prompt,
   });
   res.send(response.text);
 });
