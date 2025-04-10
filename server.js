@@ -20,7 +20,7 @@ app.get('/stream-gemini', async (req, res) => {
     model: "gemini-2.0-flash",
     contents: "你好",
   });
-  return response.text;
+  res.send(response.text);
 });
 
 // --- 启动服务器 ---
