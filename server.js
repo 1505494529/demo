@@ -9,4 +9,4 @@ app.get('/:prompt', async (req, res) => {
   });
   res.send(response.text);
 });
-app.listen(3000);
+app.listen(parseInt(process.env.LEANCLOUD_APP_PORT || process.env.PORT || 3000));
