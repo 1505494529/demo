@@ -1,19 +1,7 @@
 {
-  "name": "leancloud-gemini-stream-hardcodedkey",
-  "version": "1.0.0",
-  "description": "LeanCloud app with Gemini streaming (Hardcoded API Key - UNSAFE!)",
-  "main": "server.js",
-  "scripts": {
-    "start": "node server.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "dependencies": {
-    "@google/generative-ai": "^0.1.0", 
-    "express": "^4.17.1"
+    "@google/genai": "^0.8.0",
+    "express": "^5.1.0"
   },
-  "engines": {
-     "node": ">=20.0.0 <21.0.0" 
-  },
-  "author": "",
-  "license": "ISC"
+  "type": "module"
 }
