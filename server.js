@@ -17,8 +17,8 @@ app.get('/', (req, res) => {
 // Gemini 流式调用 API 端点
 app.get('/stream-gemini', async (req, res) => {
   const response = await ai.models.generateContent({
-    model: "gemini-2.0-flash",
-    contents: "你好",
+    model: "gemini-2.5-pro-exp-03-25",
+    contents: req.prompt,
   });
   res.send(response.text);
 });
